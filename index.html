@@ -3,74 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grande Sábio</title>
+    <title>Grande Sábio - Page 8</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Grande Sábio</a>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="C:\Users\junior\Documents\GitHub\GrandeSabio_CAF\.resourch\Imagens\MainPage_Quem Somos_Logotipo.png" alt="Grande Sábio Logo">
+            </div>
             <ul class="nav-links">
-                <li><a href="#oferta">Oferta</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contactos">Contactos</a></li>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#onde-estamos">Onde Estamos?</a></li>
+                <li><a href="./index.html#servicos">Serviços</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Bem-vindo ao Grande Sábio</h1>
-            <p>Formação de excelência para um futuro brilhante.</p>
-            <a href="#services" class="btn-primary">Saiba Mais</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Os Nossos Serviços</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>Formação</h3>
-                    <p>Formação financiada e não financiada para todas as idades.</p>
+    <main>
+        <section id="quem-somos" class="section">
+            <h2 class="section-title">Quem Somos?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O Grande Sábio é um espaço de apoio escolar e de formação, cujo compromisso é proporcionar, a alunos de todas as idades, uma aprendizagem da mais elevada excelência, permitindo-lhes alcançar mais e melhor para si e preparando-os para um mundo cada vez mais competitivo. Incutimos, nos nossos alunos, métodos de estudo e hábitos de trabalho, incentivando-os a serem responsáveis e cada vez mais autónomos.</p>
                 </div>
-                <div class="service-item">
-                    <h3>Centro de Estudos</h3>
-                    <p>Suporte pedagógico para alunos do 1º Ciclo ao Ensino Superior.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Animação</h3>
-                    <p>Festas de aniversário e eventos personalizados.</p>
+                <div class="about-logo">
+                    <img src="C:\Users\junior\Documents\GitHub\GrandeSabio_CAF\.resourch\Imagens\MainPage_Quem Somos_Logotipo.png" alt="Grande Sábio">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contactos" class="contact">
-        <div class="container">
-            <h2>Contactos</h2>
-            <p>Morada: Rua Bairro da Mata, 52, 1º-S, 4535-350 Santa Maria de Lamas</p>
-            <p>Telefone: 256 081 380</p>
-            <p>Telemóvel: 966 726 116 / 928 112 861</p>
-            <p>Email: <a href="mailto:ograndesabio@gmail.com">ograndesabio@gmail.com</a></p>
-        </div>
-    </section>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">35</span>
+                    <span class="stat-label">Anos de Experiência</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Parceiros Estratégicos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150</span>
+                    <span class="stat-label">Profissionais</span>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Grande Sábio. Todos os direitos reservados.</p>
-            <ul class="footer-links">
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Livro de Reclamações</a></li>
-                <li><a href="#">Redes Sociais</a></li>
-            </ul>
-        </div>
-    </footer>
+        <section id="onde-estamos" class="section">
+            <h2 class="section-title">Onde Estamos?</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3>Município de Santa Maria da Feira</h3>
+                    <button class="plus-btn" onclick="navigateTo('Pages/CAF_Santa Maria da Feira.html')">+</button>
+                </div>
+                <div class="location-card">
+                    <h3>Município de Ovar</h3>
+                    <button class="plus-btn" onclick="navigateTo('Pages/CAF_Ovar.html')">+</button>
+                </div>
+                <div class="location-card">
+                    <h3>Município de Esmoriz</h3>
+                    <button class="plus-btn" onclick="navigateTo('Pages/CAF_Esmoriz.html')">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="section">
+            <h2 class="section-title">Os Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>CAF_Município de Santa Maria da Feira</h3>
+                    <button class="plus-btn" onclick="navigateTo('Pages/CAF_Santa Maria da Feira.html')">+</button>
+                </div>
+                <div class="service-card">
+                    <h3>CAF_Município de Ovar</h3>
+                    <button class="plus-btn" onclick="navigateTo('Pages/CAF_Ovar.html')">+</button>
+                </div>
+                <div class="service-card">
+                    <h3>CAF_Município de Esmoriz</h3>
+                    <button class="plus-btn" onclick="navigateTo('Pages/CAF_Esmoriz.html')">+</button>
+                </div>
+                <div class="service-card wide">
+                    <h3>Gosto Pelo Saber</h3>
+                    <button class="plus-btn" onclick="navigateTo('Pages/Gosto Pelo Saber.html')">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactos" class="section">
+            <h2 class="section-title">Contactos</h2>
+            <div class="contact-info">
+                <p>Morada: Travessa Rua Bairro de Santa, 52, 1º Andar-950 Santa Maria de Lamas</p>
+                <p>Telefone: 256 376 355</p>
+                <p>Telemóvel: 965 726 98 / 939 92 90</p>
+                <p>E-mail: caf.grandesabio@hotmail.com</p>
+            </div>
+            <div class="social-links">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com" class="social-icon facebook" target="_blank">
+                    <img src="./resourch/Imagens/facebook.png" alt="Facebook Icon">
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com" class="social-icon instagram" target="_blank">
+                    <img src="./resourch/Imagens/instagram.png" alt="Instagram Icon">
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com" class="social-icon linkedin" target="_blank">
+                    <img src="./resourch/Imagens/linkedin.png" alt="LinkedIn Icon">
+                </a>
+                <!-- YouTube -->
+                <a href="https://www.youtube.com" class="social-icon youtube" target="_blank">
+                    <img src="./resourch/Imagens/youtube.png" alt="YouTube Icon">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function navigateTo(filePath) {
+            window.location.href = filePath;
+        }
+    </script>
 </body>
 </html>
