@@ -1,37 +1,49 @@
-/* styles.css */
+:root {
+    --primary-blue: #3498db;
+    --text-dark: #333;
+    --background-light: #fff;
+    --spacing-unit: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
+    color: var(--text-dark);
 }
 
-header {
+/* Navigation */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
-    padding: 10px 20px;
+    padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+    background-color: var(--background-light);
+    box-shadow: 0 1px 4px var(--primary-blue);
 }
 
-header .logo img {
+.logo img {
     height: 50px;
 }
 
-header nav a {
-    margin: 0 10px;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: calc(var(--spacing-unit) * 2);
+}
+
+.nav-links a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: var(--text-dark);
+    font-weight: 500;
 }
 
-header nav a:hover {
-    color: #007bff;
-}
-
+/* Sections */
 #main-intro {
     text-align: center;
     padding: 30px 20px;
@@ -131,8 +143,37 @@ h2 {
     font-weight: bold;
 }
 
+
+
 .inscription-box .button:hover {
     background: #0056b3;
+}
+
+
+.contact-info {
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.contact-info p {
+    margin-bottom: var(--spacing-unit);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-unit);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0;
 }
 
 footer {
@@ -142,26 +183,22 @@ footer {
     text-align: center;
 }
 
-footer .contacts {
-    margin-bottom: 15px;
-    font-size: 0.9rem;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
 
-footer .contacts a {
-    color: #ffdf00;
-    text-decoration: none;
-}
+    .locations-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
 
-footer .contacts a:hover {
-    text-decoration: underline;
-}
+    .stats {
+        grid-template-columns: 1fr;
+    }
 
-footer .social img {
-    height: 30px;
-    margin: 0 10px;
-    transition: transform 0.2s;
-}
-
-footer .social img:hover {
-    transform: scale(1.1);
+    .nav-links {
+        display: none;
+    }
 }
